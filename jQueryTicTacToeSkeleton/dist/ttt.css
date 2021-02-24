@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 480px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
+}
+
+li {
+  display: flex;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  background: gray;
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.o,
+.x {
+  background: white;
+}
+
+.x::after {
+  content: "X";
+}
+
+.o::after {
+  content: "O";
+}
+
+.example:hover {
+  background: yellow;
+}
+
+.winner {
+  background: green;
+  color: white;
+}
+
+.loser {
+  color: red;
+  background: white;
+}
+
+.draw {
+  color: red;
+  background: white;
+}
